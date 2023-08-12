@@ -20,7 +20,7 @@ class _HomeViewState extends State<HomeView> {
   String getCurrentDate() {
     var now = new DateTime.now();
 
-    String formattedDate = formatDate(now, [dd, ' ', MM, ' ', yyyy]);
+    String formattedDate = formatDate(now, [M, ' ', dd, ' , ', yyyy]);
     return formattedDate;
   }
 
@@ -104,9 +104,9 @@ class _HomeViewState extends State<HomeView> {
                       Text(
                         getCurrentDate(),
                         style: GoogleFonts.nunitoSans(
-                          fontSize: 22,
+                          fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Color.fromARGB(219, 255, 255, 255),
                         ),
                       )
                     ]),
